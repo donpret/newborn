@@ -15,7 +15,7 @@ veggies = [new Veggie(1,'Carrot'),
 selectedVeggie = this.veggies[0];
 
 addVeggie(newVeggie:any){
-	this.veggies.push(new Veggie(this.veggies.length, newVeggie.value);
+	this.veggies.push(new Veggie(this.veggies.length, newVeggie.value));
 	newVeggie.value = '';
 }
 }
