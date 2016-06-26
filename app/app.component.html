@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<h2>{{welcomeMsg}}</h2>
+<p>Veggie of the day is {{selectedVeggie.name}}!</p>
+<p>Veggies:</p>
+    <ul>
+      <li *ngFor="let veggie of veggies">
+        {{ veggie.name }}
+      </li>
+    </ul>
+	
+<div>
+<input #newVeggie>
+<button (click)="addVeggie(newVeggie)">Add Veggie!</button>
+</div>
+	
+	 <p *ngIf="veggies.length > 3">There are many veggies!</p>
